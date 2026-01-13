@@ -2,12 +2,12 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Github, Linkedin, Instagram, Code2 } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Instagram, Mail, Code2 } from 'lucide-react';
 
 const navLinks = [
     { name: 'Home', href: '/' },
+    { name: 'Project', href: '#project' },
     { name: 'About', href: '#about' },
-    { name: 'Portfolio', href: '#portfolio' },
     { name: 'Certificates', href: '#certificates' },
 ];
 
@@ -20,8 +20,8 @@ export default function Navbar() {
                 <div className="flex items-center justify-between h-16">
 
                     {/* LOGO */}
-                    <div className="flex-shrink-0">
-                        <Link href="/" className="flex items-center gap-2 text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-teal-400">
+                    <div className="shrink-0">
+                        <Link href="/" className="flex items-center gap-2 text-2xl font-bold bg-clip-text text-transparent bg-linear-to-r from-emerald-500 to-teal-400">
                             <Code2 className="text-emerald-500" /> Nue4k.
                         </Link>
                     </div>
@@ -51,6 +51,9 @@ export default function Navbar() {
                         </a>
                         <a href="#" className="text-slate-500 hover:text-blue-500 transition-colors">
                             <Instagram size={20} />
+                        </a>
+                        <a href="mailto:akhmadzakihasrul@gmail.com" className="text-slate-500 hover:text-blue-500 transition-colors">
+                            <Mail size={20} />
                         </a>
                     </div>
 

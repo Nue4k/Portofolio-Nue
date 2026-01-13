@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { ArrowRight, Download } from 'lucide-react';
 
 export default function Hero() {
     return (
@@ -12,7 +11,7 @@ export default function Hero() {
                 </h2>
                 <h1 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white leading-tight">
                     Saya adalah <br />
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-teal-400">
+                    <span className="bg-clip-text text-transparent bg-linear-to-r from-emerald-500 to-teal-400">
                         Mahasiswa Teknik Informatika
                     </span>
                 </h1>
@@ -21,26 +20,14 @@ export default function Hero() {
                 </p>
 
                 {/* Tombol CTA (Call to Action) */}
-                <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
-                    <Link
-                        href="#portfolio"
-                        className="px-8 py-3 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-medium transition-all flex items-center gap-2"
-                    >
-                        Lihat Karya <ArrowRight size={20} />
-                    </Link>
-                    <button
-                        className="px-8 py-3 rounded-full border border-slate-300 dark:border-slate-700 hover:border-emerald-500 hover:text-emerald-500 transition-all flex items-center gap-2 text-slate-700 dark:text-slate-300"
-                    >
-                        Download CV <Download size={20} />
-                    </button>
-                </div>
+
             </div>
 
             {/* Bagian Kanan: Foto Profil Kotak */}
             <div className="flex-1 relative flex flex-col items-center">
 
                 {/* Kotak Foto (Rasio 9:16) */}
-                <div className="relative w-64 h-[28rem] md:w-80 md:h-[35rem] mx-auto bg-gradient-to-b from-emerald-500 to-teal-400 rounded-3xl overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl rotate-3 hover:rotate-0 transition-all duration-500">
+                <div className="relative w-64 h-112 md:w-80 md:h-140 mx-auto bg-linear-to-b from-emerald-500 to-teal-400 rounded-3xl overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl rotate-3 hover:rotate-0 transition-all duration-500">
                     {/* Placeholder Initial */}
                     <div className="w-full h-full flex items-center justify-center text-white text-8xl font-bold opacity-20 select-none">
                         AZ
@@ -59,6 +46,13 @@ export default function Hero() {
 
             </div>
 
+
+            {/* Wave Separator */}
+            <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-0">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-[calc(100%+1.3px)] h-[60px]">
+                    <path d="M321.39,56.44c-58-10.79-114.16-30.13-172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="fill-slate-100 dark:fill-slate-800"></path>
+                </svg>
+            </div>
         </section>
     );
 }
