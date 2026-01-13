@@ -1,10 +1,9 @@
-import Image from "next/image";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-4xl font-bold">Portofolio Akhmad Zaki Hasrul</h1>
-      <p className="mt-4 text-xl">Coming Soon...</p>
+    <main className="bg-white dark:bg-slate-900 min-h-screen">
+      <Hero />
     </main>
   );
 }

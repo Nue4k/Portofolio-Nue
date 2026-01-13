@@ -1,0 +1,51 @@
+import Link from 'next/link';
+import { ArrowRight, Download } from 'lucide-react';
+
+export default function Hero() {
+  return (
+    <section id="home" className="pt-32 pb-16 px-4 md:pt-48 md:pb-32 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+      
+      {/* Bagian Kiri: Teks & Intro */}
+      <div className="flex-1 text-center md:text-left space-y-6">
+        <h2 className="text-emerald-500 font-medium tracking-wide text-lg">
+          Halo, Saya Nue4k 👋
+        </h2>
+        <h1 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white leading-tight">
+          Membangun Website <br/>
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-teal-400">
+            Modern & Cepat
+          </span>
+        </h1>
+        <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto md:mx-0">
+          Saya seorang Software Engineer yang fokus menciptakan pengalaman web yang menarik, responsif, dan mudah digunakan.
+        </p>
+        
+        {/* Tombol CTA (Call to Action) */}
+        <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
+          <Link 
+            href="#portfolio"
+            className="px-8 py-3 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-medium transition-all flex items-center gap-2"
+          >
+            Lihat Karya <ArrowRight size={20} />
+          </Link>
+          <button 
+            className="px-8 py-3 rounded-full border border-slate-300 dark:border-slate-700 hover:border-emerald-500 hover:text-emerald-500 transition-all flex items-center gap-2 text-slate-700 dark:text-slate-300"
+          >
+            Download CV <Download size={20} />
+          </button>
+        </div>
+      </div>
+
+      {/* Bagian Kanan: Foto Profil (Placeholder) */}
+      <div className="flex-1 relative">
+        <div className="relative w-64 h-64 md:w-96 md:h-96 mx-auto bg-gradient-to-b from-emerald-500 to-teal-400 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl">
+            {/* Nanti bisa diganti <Image> asli */}
+            <div className="w-full h-full flex items-center justify-center text-white text-9xl font-bold opacity-20 select-none">
+                N
+            </div>
+        </div>
+      </div>
+
+    </section>
+  );
+}
