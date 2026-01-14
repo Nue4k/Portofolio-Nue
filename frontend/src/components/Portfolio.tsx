@@ -5,7 +5,7 @@ export default function Portfolio() {
     const projects = [
         {
             title: "Personal Portfolio",
-            desc: "Website portfolio pribadi yang modern, responsif, dan interaktif. Dibangun dengan Next.js App Router dan Tailwind CSS.",
+            desc: "A modern, responsive, and interactive personal portfolio website. Built with Next.js App Router and Tailwind CSS.",
             tech: ["Next.js", "Tailwind CSS", "TypeScript"],
             color: "from-emerald-500 to-teal-400"
         },
@@ -52,10 +52,10 @@ export default function Portfolio() {
 
                                 {/* Link Buttons */}
                                 <div className="pt-4 flex items-center gap-4">
-                                    <Link href="#" className="flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-emerald-500 transition-colors">
+                                    <Link href="#" className="flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-700/50 px-4 py-2 rounded-lg shadow-sm hover:shadow-md hover:bg-emerald-50 dark:hover:bg-emerald-900/20 hover:text-emerald-500 active:shadow-none active:translate-y-0.5 transition-all">
                                         <ExternalLink size={16} /> Demo
                                     </Link>
-                                    <Link href="#" className="flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-emerald-500 transition-colors">
+                                    <Link href="#" className="flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-700/50 px-4 py-2 rounded-lg shadow-sm hover:shadow-md hover:bg-emerald-50 dark:hover:bg-emerald-900/20 hover:text-emerald-500 active:shadow-none active:translate-y-0.5 transition-all">
                                         <Github size={16} /> Code
                                     </Link>
                                 </div>
@@ -67,7 +67,7 @@ export default function Portfolio() {
                 {/* Tombol Lihat Selengkapnya (Opsional) */}
                 <div className="mt-16 text-center">
                     <Link href="#" className="inline-flex items-center gap-2 text-emerald-500 font-medium hover:underline hover:underline-offset-4">
-                        Lihat Repository GitHub <ArrowRight size={16} />
+                        View GitHub Repository <ArrowRight size={16} />
                     </Link>
                 </div>
 

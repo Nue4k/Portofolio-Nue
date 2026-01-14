@@ -41,15 +41,14 @@ export default function Navbar() {
                         </div>
                     </div>
 
-                    {/* SOCIAL ICONS (Desktop) */}
                     <div className="hidden md:flex items-center space-x-4">
                         <a href="https://github.com/Nue4k" target="_blank" className="text-slate-500 hover:text-emerald-500 transition-colors">
                             <Github size={20} />
                         </a>
-                        <a href="#" className="text-slate-500 hover:text-blue-500 transition-colors">
+                        <a href="https://www.linkedin.com/in/akhmadzakihasrul" target="_blank" className="text-slate-500 hover:text-blue-500 transition-colors">
                             <Linkedin size={20} />
                         </a>
-                        <a href="#" className="text-slate-500 hover:text-blue-500 transition-colors">
+                        <a href="https://www.instagram.com/akmzhs" target="_blank" className="text-slate-500 hover:text-pink-500 transition-colors">
                             <Instagram size={20} />
                         </a>
                         <a href="mailto:akhmadzakihasrul@gmail.com" className="text-slate-500 hover:text-blue-500 transition-colors">
@@ -61,7 +60,7 @@ export default function Navbar() {
                     <div className="md:hidden flex items-center">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="p-2 rounded-md text-slate-700 dark:text-slate-200 hover:text-emerald-500 focus:outline-none"
+                            className="p-2 rounded-md text-slate-700 dark:text-slate-200 hover:text-emerald-500 focus:outline-none transition-all active:scale-95 active:bg-slate-200 dark:active:bg-slate-800"
                         >
                             {isOpen ? <X size={24} /> : <Menu size={24} />}
                         </button>

@@ -7,16 +7,16 @@ export default function Hero() {
             {/* Bagian Kiri: Teks & Intro */}
             <div className="flex-1 text-center md:text-left space-y-6">
                 <h2 className="text-emerald-500 font-medium tracking-wide text-lg">
-                    Halo, Saya Akhmad Zaki Hasrul 👋
+                    Hi, I'm Akhmad Zaki Hasrul 👋
                 </h2>
                 <h1 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white leading-tight">
-                    Saya adalah <br />
+                    I am an <br />
                     <span className="bg-clip-text text-transparent bg-linear-to-r from-emerald-500 to-teal-400">
-                        Mahasiswa Teknik Informatika
+                        Informatics student
                     </span>
                 </h1>
                 <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto md:mx-0">
-                    Saya adalah mahasiswa Teknik Informatika di Universitas Hasanuddin.
+                    I am an Informatics Engineering student at Hasanuddin University.
                 </p>
 
                 {/* Tombol CTA (Call to Action) */}
@@ -40,7 +40,7 @@ export default function Hero() {
                         Akhmad Zaki Hasrul
                     </h3>
                     <p className="text-emerald-500 font-medium mt-1">
-                        Mahasiswa Teknik Informatika
+                        Informatics Engineering Student
                     </p>
                 </div>
 
