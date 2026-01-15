@@ -29,10 +29,11 @@ export default function Hero() {
 
                 {/* Kotak Foto (Rasio 9:16) */}
                 <div className="glow-shadow relative w-64 h-112 md:w-80 md:h-140 mx-auto bg-linear-to-b from-amber-500 to-orange-400 dark:from-emerald-500 dark:to-teal-400 rounded-3xl overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl rotate-3 hover:rotate-0 transition-all duration-500">
-                    {/* Placeholder Initial */}
-                    <div className="w-full h-full flex items-center justify-center text-white text-8xl font-bold opacity-20 select-none">
-                        AZ
-                    </div>
+                    <img
+                        src="/images/Profile-Pict-Nue.jpeg"
+                        alt="Profile"
+                        className="w-full h-full object-cover"
+                    />
                 </div>
 
                 {/* Nama di Bawah Foto */}
