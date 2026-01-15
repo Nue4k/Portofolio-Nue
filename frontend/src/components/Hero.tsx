@@ -3,12 +3,12 @@ import ShineText from './ShineText';
 
 export default function Hero() {
     return (
-        <section id="home" className="pt-32 pb-16 px-8 md:px-20 md:pt-48 md:pb-32 w-full flex flex-col-reverse md:flex-row items-center gap-12 justify-center relative">
+        <section id="home" className="bg-stone-300 dark:bg-slate-900 pt-32 pb-16 px-8 md:px-20 md:pt-48 md:pb-32 w-full flex flex-col-reverse md:flex-row items-center gap-12 justify-center relative">
 
             {/* Bagian Kiri: Teks & Intro */}
             <div className="flex-1 text-center md:text-left space-y-6">
                 <h2 className="font-medium tracking-wide text-lg">
-                    <ShineText>Hi, I'm Akhmad Zaki Hasrul 👋</ShineText>
+                    <ShineText>Hi, I'm Akhmad Zaki Hasrul</ShineText> <span>👋</span>
                 </h2>
                 <h1 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white leading-tight">
                     I am an <br />
@@ -17,7 +17,7 @@ export default function Hero() {
                     </ShineText>
                 </h1>
                 <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto md:mx-0">
-                    I am an Informatics Engineering student at Hasanuddin University.
+                    I am an Informatics Engineering student at Hasanuddin University with a strong interest in data science and analytics.
                 </p>
 
                 {/* Tombol CTA (Call to Action) */}

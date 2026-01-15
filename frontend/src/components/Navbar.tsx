@@ -3,12 +3,14 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X, Github, Linkedin, Instagram, Mail, Code2 } from 'lucide-react';
+import ShineText from './ShineText';
 
 const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Project', href: '#project' },
     { name: 'About', href: '#about' },
     { name: 'Certificates', href: '#certificates' },
+    { name: 'Contact', href: '#contact' },
 ];
 
 export default function Navbar() {
@@ -21,8 +23,8 @@ export default function Navbar() {
 
                     {/* LOGO */}
                     <div className="shrink-0">
-                        <Link href="/" className="flex items-center gap-2 text-2xl font-bold bg-clip-text text-transparent bg-linear-to-r from-emerald-500 to-teal-400">
-                            <Code2 className="text-emerald-500" /> Nue4k.
+                        <Link href="/" className="flex items-center gap-2 text-2xl font-bold bg-clip-text text-transparent bg-linear-to-r from-amber-500 to-orange-400 dark:from-emerald-500 dark:to-teal-400">
+                            <Code2 className="text-amber-500 dark:text-emerald-500" /> <ShineText>Nue4k.</ShineText>
                         </Link>
                     </div>
 
@@ -33,7 +35,7 @@ export default function Navbar() {
                                 <Link
                                     key={link.name}
                                     href={link.href}
-                                    className="text-slate-700 dark:text-slate-300 hover:text-emerald-500 dark:hover:text-emerald-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                                    className="text-stone-600 dark:text-slate-300 hover:text-amber-600 dark:hover:text-emerald-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
                                 >
                                     {link.name}
                                 </Link>
@@ -42,16 +44,16 @@ export default function Navbar() {
                     </div>
 
                     <div className="hidden md:flex items-center space-x-4">
-                        <a href="https://github.com/Nue4k" target="_blank" className="text-slate-500 hover:text-emerald-500 transition-colors">
+                        <a href="https://github.com/Nue4k" target="_blank" rel="noopener noreferrer" className="text-stone-500 hover:text-amber-600 dark:hover:text-emerald-500 transition-colors">
                             <Github size={20} />
                         </a>
-                        <a href="https://www.linkedin.com/in/akhmadzakihasrul" target="_blank" className="text-slate-500 hover:text-blue-500 transition-colors">
+                        <a href="https://www.linkedin.com/in/akhmadzakihasrul" target="_blank" rel="noopener noreferrer" className="text-stone-500 hover:text-blue-500 transition-colors">
                             <Linkedin size={20} />
                         </a>
-                        <a href="https://www.instagram.com/akmzhs" target="_blank" className="text-slate-500 hover:text-pink-500 transition-colors">
+                        <a href="https://www.instagram.com/akmzhs" target="_blank" rel="noopener noreferrer" className="text-stone-500 hover:text-pink-500 transition-colors">
                             <Instagram size={20} />
                         </a>
-                        <a href="mailto:akhmadzakihasrul@gmail.com" className="text-slate-500 hover:text-blue-500 transition-colors">
+                        <a href="mailto:akhmadzakihasrul@gmail.com" className="text-stone-500 hover:text-blue-500 transition-colors">
                             <Mail size={20} />
                         </a>
                     </div>
@@ -76,7 +78,7 @@ export default function Navbar() {
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className="text-slate-700 dark:text-slate-300 hover:text-emerald-500 block px-3 py-2 rounded-md text-base font-medium"
+                                className="text-stone-600 dark:text-slate-300 hover:text-amber-600 dark:hover:text-emerald-500 block px-3 py-2 rounded-md text-base font-medium"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {link.name}
