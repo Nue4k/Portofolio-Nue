@@ -10,6 +10,7 @@ html {
   --foreground: #2d2620;
   --primary: #d97706;
   --primary-light: #fbbf24;
+  color-scheme: light dark;
 }
 
 @theme inline {
